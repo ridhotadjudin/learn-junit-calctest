@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: nexsoft.test.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec <<< FAILURE!
+nexsoft.test.CalculatorTest.testMinus()  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "nexsoft.test.Calculator.pengurangan(int, int)" because "this.calculator" is null
+	at nexsoft.test.CalculatorTest.testMinus(CalculatorTest.java:101)
+
+nexsoft.test.CalculatorTest.testPembagian()  Time elapsed: 0.06 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Tidak ada throws ==> Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "nexsoft.test.Calculator.pembagian2(int, int)" because "this.calculator" is null
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:83)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:54)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:41)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3154)
+	at nexsoft.test.CalculatorTest.testPembagian(CalculatorTest.java:121)
+Caused by: java.lang.NullPointerException: Cannot invoke "nexsoft.test.Calculator.pembagian2(int, int)" because "this.calculator" is null
+	at nexsoft.test.CalculatorTest.lambda$testPembagian$2(CalculatorTest.java:122)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:50)
+	... 21 more
+
